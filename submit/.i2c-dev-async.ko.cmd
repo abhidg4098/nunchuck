@@ -1,0 +1,1 @@
+cmd_/home/abhishekdg/nunchuck/submit/i2c-dev-async.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-2.6.32-24-generic/scripts/module-common.lds --build-id -o /home/abhishekdg/nunchuck/submit/i2c-dev-async.ko /home/abhishekdg/nunchuck/submit/i2c-dev-async.o /home/abhishekdg/nunchuck/submit/i2c-dev-async.mod.o

@@ -1,0 +1,33 @@
+./Makefile: line 3: obj-m: command not found
+make: Entering directory `/usr/src/linux-headers-2.6.32-24-generic'
+  CC [M]  /home/abhishekdg/nunchuck/i2c-dev-async.o
+/home/abhishekdg/nunchuck/i2c-dev-async.c: In function ‘async_routine’:
+/home/abhishekdg/nunchuck/i2c-dev-async.c:97: error: invalid initializer
+/home/abhishekdg/nunchuck/i2c-dev-async.c:102: error: ‘union i2c_smbus_data’ has no member named ‘read_write’
+/home/abhishekdg/nunchuck/i2c-dev-async.c:102: error: ‘union i2c_smbus_data’ has no member named ‘command’
+/home/abhishekdg/nunchuck/i2c-dev-async.c:102: error: ‘union i2c_smbus_data’ has no member named ‘protocol’
+/home/abhishekdg/nunchuck/i2c-dev-async.c:105: error: ‘union i2c_smbus_data’ has no member named ‘size’
+/home/abhishekdg/nunchuck/i2c-dev-async.c:106: error: ‘union i2c_smbus_data’ has no member named ‘size’
+/home/abhishekdg/nunchuck/i2c-dev-async.c:107: error: ‘union i2c_smbus_data’ has no member named ‘read_write’
+/home/abhishekdg/nunchuck/i2c-dev-async.c:110: error: ‘struct async_t’ has no member named ‘status’
+/home/abhishekdg/nunchuck/i2c-dev-async.c:115: error: ‘struct async_t’ has no member named ‘status’
+/home/abhishekdg/nunchuck/i2c-dev-async.c: In function ‘manage_rx’:
+/home/abhishekdg/nunchuck/i2c-dev-async.c:126: error: ‘datasize’ undeclared (first use in this function)
+/home/abhishekdg/nunchuck/i2c-dev-async.c:126: error: (Each undeclared identifier is reported only once
+/home/abhishekdg/nunchuck/i2c-dev-async.c:126: error: for each function it appears in.)
+/home/abhishekdg/nunchuck/i2c-dev-async.c:140: error: ‘launch_work’ undeclared (first use in this function)
+/home/abhishekdg/nunchuck/i2c-dev-async.c: In function ‘i2cdev_check_mux_parents’:
+/home/abhishekdg/nunchuck/i2c-dev-async.c:285: error: implicit declaration of function ‘i2c_parent_is_i2c_adapter’
+/home/abhishekdg/nunchuck/i2c-dev-async.c:285: warning: initialization makes pointer from integer without a cast
+/home/abhishekdg/nunchuck/i2c-dev-async.c: In function ‘i2cdev_check_mux_children’:
+/home/abhishekdg/nunchuck/i2c-dev-async.c:300: error: ‘i2c_adapter_type’ undeclared (first use in this function)
+/home/abhishekdg/nunchuck/i2c-dev-async.c: In function ‘i2cdev_check_addr’:
+/home/abhishekdg/nunchuck/i2c-dev-async.c:314: warning: initialization makes pointer from integer without a cast
+/home/abhishekdg/nunchuck/i2c-dev-async.c: In function ‘i2c_dev_init’:
+/home/abhishekdg/nunchuck/i2c-dev-async.c:728: error: ‘launch_work’ undeclared (first use in this function)
+/home/abhishekdg/nunchuck/i2c-dev-async.c:728: warning: initialization from incompatible pointer type
+/home/abhishekdg/nunchuck/i2c-dev-async.c:729:52: error: macro "INIT_WORK" passed 3 arguments, but takes just 2
+/home/abhishekdg/nunchuck/i2c-dev-async.c:729: error: ‘INIT_WORK’ undeclared (first use in this function)
+make[1]: *** [/home/abhishekdg/nunchuck/i2c-dev-async.o] Error 1
+make: *** [_module_/home/abhishekdg/nunchuck] Error 2
+make: Leaving directory `/usr/src/linux-headers-2.6.32-24-generic'
